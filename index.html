@@ -9,26 +9,26 @@
   <body>
     <div class="calculator">
       <div class="top">
-        <button class="clear">C</button>
-        <div class="display"></div>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <div class="display" id="display"></div>
       </div>
       <div class="buttons">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operator">+</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operator">-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operator">/</button>
-        <button>0</button>
-        <button>.</button>
-        <button class="equal">=</button>
-        <button class="operator">*</button>
+        <button onclick="enterNumber('7')">7</button>
+        <button onclick="enterNumber('8')">8</button>
+        <button onclick="enterNumber('9')">9</button>
+        <button class="operator" onclick="setOperator('+')">+</button>
+        <button onclick="enterNumber('4')">4</button>
+        <button onclick="enterNumber('5')">5</button>
+        <button onclick="enterNumber('6')">6</button>
+        <button class="operator" onclick="setOperator('-')">-</button>
+        <button onclick="enterNumber('1')">1</button>
+        <button onclick="enterNumber('2')">2</button>
+        <button onclick="enterNumber('3')">3</button>
+        <button class="operator" onclick="setOperator('/')">/</button>
+        <button onclick="enterNumber('0')">0</button>
+        <button onclick="enterNumber('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+        <button class="operator" onclick="setOperator('*')">*</button>
       </div>
     </div>
 
