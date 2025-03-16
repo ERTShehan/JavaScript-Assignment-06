@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(/assets/images/background-image.jpg);
+}
+
+.calculator {
+    width: 320px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.clear {
+    width: 20%;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(255, 150, 100, 0.8);
+    text-align: center;
+}
+.display {
+    width: 75%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.operator {
+    background:lemonchiffon;
+}
+.equal {
+    background: rgba(100, 200, 255, 0.8);
+}
+
+button:hover {
+    background:lightblue;
+    color: white;
+}
+
+.equal:hover {
+    background:green;
+    color: white;
+}
+
+.clear:hover {
+    background: rgb(255, 0, 0);
+    color: white;
+}
+
+button:active {
+    transform: scale(1.1);
+}
